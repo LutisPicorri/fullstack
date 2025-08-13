@@ -15,10 +15,16 @@ const App = () => {
   const [selected, setSelected] = useState(0)
   const [votes, setVotes] = useState(new Array(anecdotes.length).fill(0))
 
+  const maxVotes = Math.max(...votes)
+  const topIndex = votes.indexOf(maxVotes)
+
   return (
     <div>
-      {anecdotes[selected]}
-      <br />
+      <div>
+        {anecdotes[selected]}
+        <br />
+        <small>has {votes[selected]} votes</small>
+      </div>
       <button onClick={() => {
         const newVotes = [...votes]
         newVotes[selected] += 1
@@ -30,7 +36,15 @@ const App = () => {
         next anecdote
       </button>
       <h2>Anecdote with most votes</h2>
-      <p>{anecdotes[votes.indexOf(Math.max(...votes))]}</p>
+      {maxVotes === 0 ? (
+        <p>No votes yet</p>
+      ) : (
+        <p>
+          {anecdotes[topIndex]}
+          <br />
+          <small>has {maxVotes} votes</small>
+        </p>
+      )}
     </div>
   )
 }

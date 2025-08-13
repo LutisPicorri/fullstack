@@ -15,18 +15,18 @@ const Part = ({ name, exercises }) => {
 const Content = ({ parts }) => {
   return (
     <div>
-      {parts.map((part, index) => (
-      <Part key={index} name={part.name} exercises={part.exercises} />
-    ))}
+      {parts.map((part) => (
+        <Part key={part.name} name={part.name} exercises={part.exercises} />
+      ))}
     </div>
   )
 }
 
 const Total = ({ parts }) => {
-  const Sum = parts.reduce((sum, part) => sum + part.exercises, 0)
+  const totalExercises = parts.reduce((sum, part) => sum + part.exercises, 0)
   return(
     <div>
-      <p>Number of exercises {Sum}</p>
+      <p>Number of exercises {totalExercises}</p>
     </div>
   )
 }
