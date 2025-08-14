@@ -114,15 +114,22 @@ form > div {
 input {
   margin-left: 0.5rem;
   padding: 0.5rem 0.8rem;
-  border: 1.5px solid #bfc9d9;
+  border: 1.5px solid #0b1e3b;
   border-radius: 8px;
   font-size: 1em;
   transition: border-color 0.2s;
-  background: #f7faff;
+  background: #ffffff;
+  color: #1f2937;
+  caret-color: #2a5298;
 }
 input:focus {
   border-color: #2a5298;
   outline: none;
+  background: #ffffff;
+}
+
+input::placeholder {
+  color: #6b7280;
 }
 
 ul {

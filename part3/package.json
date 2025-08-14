@@ -1,0 +1,30 @@
+{
+  "name": "fullstack",
+  "version": "1.0.0",
+  "description": "part3",
+  "keywords": [
+    "backend"
+  ],
+  "homepage": "https://github.com/LutisPicorri/fullstack#readme",
+  "bugs": {
+    "url": "https://github.com/LutisPicorri/fullstack/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LutisPicorri/fullstack.git"
+  },
+  "license": "ISC",
+  "author": "Lutis Picorri",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "morgan": "^1.10.0"
+  }
+}
