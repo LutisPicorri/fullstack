@@ -11,9 +11,24 @@ const connect = async () => {
   await mongoose.connect(url)
 }
 
+const phoneRegex = /^(\d{2,3})-(\d{5,})$/
+
 const personSchema = new mongoose.Schema({
-  name: { type: String, required: true },
-  number: { type: String, required: true },
+  name: {
+    type: String,
+    required: [true, 'Name is required'],
+    minlength: [3, 'Name must be at least 3 characters long'],
+    trim: true,
+  },
+  number: {
+    type: String,
+    required: [true, 'Number is required'],
+    minlength: [8, 'Number must be at least 8 characters long'],
+    validate: {
+      validator: (v) => phoneRegex.test(v),
+      message: (props) => `${props.value} is not a valid phone number (expected NN-NNNNNN or NNN-NNNNNN)`
+    }
+  },
 })
 
 personSchema.set('toJSON', {
