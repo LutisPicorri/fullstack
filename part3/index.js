@@ -1,5 +1,8 @@
 const path = require('path');
 require('dotenv').config({ path: path.join(__dirname, '.env') });
+// Debug log to verify env var presence in all environments (remove later if desired)
+// eslint-disable-next-line no-console
+console.log('MONGODB_URI present:', Boolean(process.env.MONGODB_URI));
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
