@@ -27,8 +27,7 @@ const nameArg = args[3]
 const numberArg = args[4]
 
 const username = 'lutis'
-// IMPORTANT: clusterUrl must be just the host part, NOT a full connection string and NOT containing any password
-const clusterUrl = 'cluster0.q6bjkha.mongodb.net' // e.g. cluster0.xxxxxx.mongodb.net
+const clusterUrl = 'cluster0.q6bjkha.mongodb.net'
 const appName = 'Cluster0'
 
 const url = `mongodb+srv://${username}:${password}@${clusterUrl}/phonebookApp?retryWrites=true&w=majority&appName=${appName}`

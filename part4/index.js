@@ -3,6 +3,7 @@ const express = require('express')
 const blogsRouter = require('./routes/blogs')
 const usersRouter = require('./routes/users')
 const loginRouter = require('./routes/login')
+const testingRouter = require('./routes/testing')
 const { tokenExtractor, userExtractor } = require('./middleware/auth')
 
 const app = express()
@@ -15,6 +16,7 @@ app.use(tokenExtractor)
 app.use('/api/blogs', blogsRouter)
 app.use('/api/users', usersRouter)
 app.use('/api/login', loginRouter)
+app.use('/api/testing', testingRouter)
 
 // Error handling middleware
 app.use((error, request, response, next) => {

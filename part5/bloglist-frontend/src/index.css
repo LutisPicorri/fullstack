@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.success {
+  color: green;
+  background: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  background: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.blog {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.blog-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.blog-details {
+  margin-top: 10px;
+}
+
+.blog-url {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.blog-url:hover {
+  text-decoration: underline;
+}
+
+.blog-likes {
+  margin: 10px 0;
+}
+
+.blog-user {
+  font-style: italic;
+  color: #666;
+  margin-top: 5px;
+}
+
+button {
+  margin: 2px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e9ecef;
+}
+
+button.remove {
+  background-color: #dc3545;
+  color: white;
+  border-color: #dc3545;
+}
+
+button.remove:hover {
+  background-color: #c82333;
+}
+
+button.like {
+  background-color: #28a745;
+  color: white;
+  border-color: #28a745;
+}
+
+button.like:hover {
+  background-color: #218838;
+}
