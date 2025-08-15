@@ -1,0 +1,38 @@
+{
+  "name": "fullstack",
+  "version": "1.0.0",
+  "description": "blog list",
+  "keywords": [
+    "part4"
+  ],
+  "homepage": "https://github.com/LutisPicorri/fullstack#readme",
+  "bugs": {
+    "url": "https://github.com/LutisPicorri/fullstack/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LutisPicorri/fullstack.git"
+  },
+  "license": "ISC",
+  "author": "Lutis Picorri",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test tests/*.test.js --test-concurrency=1",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "bloglist": "node --watch index.js",
+    "bloglist:dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.4.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "supertest": "^7.0.0"
+  }
+}
