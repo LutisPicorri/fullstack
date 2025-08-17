@@ -1,0 +1,50 @@
+/* Additional app-specific styles */
+.notification {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid;
+}
+
+.notification.success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.notification.error {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+.navigation {
+  background-color: #f8f9fa;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+}
+
+.navigation a {
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.blog-form {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  margin: 20px 0;
+}
+
+.blog-form h2 {
+  margin-top: 0;
+  color: #495057;
+}

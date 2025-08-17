@@ -1,0 +1,47 @@
+{
+  "notes": [
+    {
+      "content": "HTML is easy",
+      "id": "1"
+    },
+    {
+      "content": "Browser can execute only JavaScript",
+      "id": "2"
+    },
+    {
+      "content": "Most important methods of HTTP-protocol are GET and POST",
+      "id": "3"
+    },
+    {
+      "id": "f997",
+      "content": "Well done , p.v.d"
+    }
+  ],
+  "persons": [
+    {
+      "name": "Arto Hellas",
+      "number": "040-1234567",
+      "id": "1"
+    },
+    {
+      "name": "Ada Lovelace",
+      "number": "39-44-5323523",
+      "id": "2"
+    },
+    {
+      "name": "Dan Abramov",
+      "number": "12-43-234345",
+      "id": "3"
+    },
+    {
+      "name": "Mary Poppendieck",
+      "number": "39-23-6423122",
+      "id": "4"
+    },
+    {
+      "id": "e2d7",
+      "name": "N",
+      "number": "-589738743"
+    }
+  ]
+}
